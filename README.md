@@ -74,7 +74,7 @@ https://trip-app-1.herokuapp.com/
 ### Association
 
 - belongs_to :user
-- has_many : comments
+- has_many :comments
 - has_many_attached :images
 - belongs_to_active_hash :member
 - belongs_to_active_hash :transportation
