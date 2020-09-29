@@ -7,7 +7,7 @@
 * 日本の名所やおすすめスポットを共有、検索することができる。
 
 ## url
-* 
+https://trip-app-1.herokuapp.com/
 
 ## テスト用アカウント
 * Basic認証
