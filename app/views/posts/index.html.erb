@@ -1,0 +1,88 @@
+<%= render "shared/header" %>
+<div class='main'>
+
+  <%# 画面上部のタイトル部分 %>
+  <div class="title_messages">
+    <h1 class="title_message">Welcome to <span>TRIP SHARES.</span></h1>
+      <p class="sub_messages">
+        絶景を、今届けよう
+      </p>
+    <div class='store-btn'>
+      <%= link_to image_tag("https://linkmaker.itunes.apple.com/ja-jp/badge-lrg.svg?releaseDate=2011-09-21&kind=iossoftware&bubble=ios_apps", class:"apple-btn"), "#" %>
+      <%= link_to image_tag("dl-android.png", class:"google-btn"), "#" %>
+    </div>
+  </div>
+
+  <%# 投稿一覧 %>
+  
+  <div class='post-contents'>
+    <form class="search-form" action="#">
+      <input class='input-box' placeholder='キーワードから探す'>
+      <button class="search-button">
+        <%= image_tag "search.png", class:"search-icon" %>
+      </button>
+    </form>
+    <h2 class='title'>Post list</h2>
+    <%= link_to 'New Post', "#", class: "subtitle" %>
+    <ul class='post-lists'>
+
+      <%# 投稿のインスタンス変数になにか入っている場合、中身のすべてを展開できるようにしましょう %>
+      <li class='list'>
+        <%= link_to "#" do %>
+        <div class='post-img-content'>
+          <%= image_tag "item-sample.png", class: "post-img" %>
+        </div>
+        <div class='post-info'>
+          <h3 class='post-name'>
+            <%= "タイトル" %>
+          </h3>
+          <div class='post-place'>
+            <%= "場所" %>
+            <div class='star-btn'>
+              <%= image_tag "star.png", class:"star-icon" %>
+              <p class='star-count'>0</p>
+            </div>
+          </div>
+        </div>
+        <% end %>
+      </li>
+      <%# //投稿のインスタンス変数になにか入っている場合、中身のすべてを展開できるようにしましょう %>
+
+      <%# 投稿がない場合のダミー %>
+      <%# 投稿がある場合は表示されないようにしましょう %>
+      <li class='list'>
+        <%= link_to '#' do %>
+        <%= image_tag "https://s3-ap-northeast-1.amazonaws.com/mercarimaster/uploads/captured_image/content/10/a004.png", class: "post-img" %>
+        <div class='post-info'>
+          <h3 class='post-name'>
+            お気に入りの写真を投稿しよう！
+          </h3>
+          <div class='post-place'>
+            <p>nagoya</p>
+            <div class='star-btn'>
+              <%= image_tag "star.png", class:"star-icon" %>
+              <p class='star-count'>0</p>
+            </div>
+          </div>
+        </div>
+        <% end %>
+      </li>
+      <%# //投稿がある場合は表示されないようにしましょう %>
+      <%# /投稿がない場合のダミー %>
+    </ul>
+  </div>
+  <%# /投稿一覧 %>
+
+  <div class="container">
+    <div class="inner-block">
+      <div class="fade-img-box">
+        <img src="sakura.jpg" alt="No image">
+        <img src="sea.jpg" alt="No image">
+        <img src="koyo.jpg" alt="No image">
+        <img src="shirakabago.jpg" alt="No image">
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= render "shared/footer" %> 
