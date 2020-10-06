@@ -1,30 +1,30 @@
 /* 下部広告部分 */
 /* items/index.htmlの広告cssを所々使いまわしています。 */
 
-.ad-footer-contents {
-  width: 100vw;
-  background-image: image-url('furima-footer.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 5vh 15vw;
-  color: #fff;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
-}
+// .ad-footer-contents {
+//   width: 100vw;
+//   background-image: image-url('furima-footer.png');
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-position: top center;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   padding: 5vh 15vw;
+//   color: #fff;
+//   text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+// }
 
-.ad-footer-title {
-  font-size: 4vh;
-  margin-bottom: 2vh;
-}
+// .ad-footer-title {
+//   font-size: 4vh;
+//   margin-bottom: 2vh;
+// }
 
-.ad-footer-explain {
-  font-size: 3vh;
-  line-height: 30px;
-}
+// .ad-footer-explain {
+//   font-size: 3vh;
+//   line-height: 30px;
+// }
 
 /* //下部広告部分 */
 
@@ -32,7 +32,7 @@
   width: 100vw;
   padding: 5vh 0;
   color: #FFF;
-  background-color: #272727;
+  background-color: rgb(255, 255, 255);
   text-align: center;
 }
 
@@ -47,22 +47,25 @@
 }
 
 .footer-content-head {
+  color: #4b4b4b;
+  text-shadow: -3px 0 0 white;
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .footer-link {
-  color: #FFF;
+  color: #4b4b4b;
+  text-shadow: -3px 0 0 white;
   font-size: 12px;
   line-height: 30px;
 }
 
-.logo-white {
-  width: 20vh;
-  vertical-align: bottom;
-}
+// .logo-white {
+//   width: 20vh;
+//   vertical-align: bottom;
+// }
 
-.footer>p {
-  font-size: 14px;
-}
+// .footer>p {
+//   font-size: 14px;
+// }

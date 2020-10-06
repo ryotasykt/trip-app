@@ -3,37 +3,54 @@ a {
 }
 
 .main {
-  background: #f8f8f8;
+  background-color: whitesmoke;
 }
 
-/* 画面上部の「人生を変えるフリマアプリ」帯部分 */
-.title-contents {
+/* 画面上部タイトル部分 */
+.title_messages {
   width: 100vw;
-  background-image: image-url('season.jpg');
+  height: 100vh;
+  background-image: url(../albam.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top center;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  padding: 5vh 15vw;
-  color: #fff;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
 }
 
-.service-title {
-  font-size: 8vh;
+.title_message {
+  color: olivedrab;
+  font-size: 48px;
+  line-height: 1.5;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000;
+  margin-bottom: 30px;
 }
 
-.service-explain {
-  font-size: 2.5vh;
-  line-height: 40px;
+span {
+  margin: 0; padding: 0;
+  text-decoration: none;
+  color: #4b4b4b;
+  text-shadow: 0px 3px 0px #b2a98f,
+               0px 14px 10px rgba(0,0,0,0.15),
+               0px 24px 2px rgba(0,0,0,0.1),
+               0px 34px 30px rgba(0,0,0,0.1);
+}
+
+.sub_messages {
+  color: olive;
+  font-size: 40px;
+  line-height: 1;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0.5px 0.5px 0.5px #000;
 }
 
 .store-btn {
   display: flex;
-  margin-top: 24px;
+  margin-top: 50px;
 }
 
 .apple-btn {
@@ -44,178 +61,68 @@ a {
 .google-btn {
   height: 9vh;
 }
+/* //画面上部タイトル部分 */
 
-/* //画面上部の「人生を変えるフリマアプリ」帯部分 */
-
-/* FURIMAが選ばれる3つの理由部分 */
-.select-reason-contents {
-  padding: 5vh 15vw;
+/* 画像フェード部分 */
+.container {
+  overflow: hidden;
 }
-
-.select-reason-contents>.title {
-  text-align: center;
-  font-size: 3.5vh;
-  font-weight: bold;
-  margin-bottom: 5vh;
+ 
+.inner-block {
+  width: 100vw;
+  margin: 0 auto;
   position: relative;
 }
-
-.select-reason-contents>.title::after {
-  content: '';
-  width: 70px;
-  height: 4px;
-  background-color: #3ccace;
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.reason-lists {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.reason-lists>.list {
-  width: 33vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-
-.list-pict {
-  margin-bottom: 20px;
+ 
+.fade-img-box {
   width: 100%;
+  height: 700px;
+  margin-left: auto;
+  margin-top: 10px;
+  position: relative;
 }
-
-.reason-list-number {
+ 
+.fade-img-box img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 60px;
-  height: 60px;
-  font-size: 30px;
-  text-align: center;
-  line-height: 60px;
-  background-color: #3ccace;
-  color: #fff;
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
 }
+/* //画像フェード部分 */
 
-.reason-list-text {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 50px;
-}
-
-.reason-list-blue-text {
-  color: #3ccace;
-}
-
-.reason-list-description {
-  font-size: 18px;
-  margin-top: 20px;
-}
-
-/* //FURIMAが選ばれる3つの理由部分 */
-
-
-/* 画面中央の「会員数日本一位」帯部分*/
-.ad-contents {
-  width: 100vw;
-  background-image: image-url('furima-header02.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 5vh 15vw;
-  color: #fff;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
-}
-
-.ad-title {
-  font-size: 5vh;
-  margin-bottom: 2vh;
-}
-
-.ad-explain {
-  font-size: 2.5vh;
-  line-height: 30px;
-}
-
-.store-btn {
-  display: flex;
-  margin-top: 24px;
-}
-
-.apple-btn {
-  margin-right: 1vw;
-  height: 9vh;
-}
-
-.google-btn {
-  height: 9vh;
-}
-
-/* //画面中央の「会員数日本一位」帯部分 */
-
-/* FURIMAの特徴 */
-.feature-contents {
-  padding: 5vh 15vw;
-}
-
-.feature-contents>.title {
-  text-align: center;
-  font-size: 3.5vh;
-  font-weight: bold;
-  margin-bottom: 5vh;
-  position: relative;
-}
-
-.feature-contents>.title::after {
-  content: '';
-  width: 70px;
-  height: 4px;
-  background-color: #3ccace;
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.feature-lists {
+/* 検索フォーム部分 */
+.search-form {
+  width: 65vw;
+  height: 5vh;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.feature-lists>.list {
-  width: 33vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
+  margin-bottom: 30px;
 }
 
-.feature-list-text {
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 50px;
+.search-form>.input-box {
+  width: 100%;
+  height: 5vh;
+  padding-left: 10px;
 }
 
-.feature-list-description {
-  font-size: 18px;
-  margin-top: 20px;
+.search-button {
+  width: 5vh;
+  border: 0;
+  cursor: pointer;
+  background-color: #3ccace;
+  padding: 8px;
 }
 
-/* //FURIMAの特徴 */
+.search-icon {
+  width: 100%;
+}
+/* //検索フォーム部分 */
 
-/* 商品一覧 */
-
-.item-contents {
+/* 投稿一覧 */
+.post-contents {
   background-color: #FFF;
   display: flex;
   flex-direction: column;
@@ -223,13 +130,13 @@ a {
   padding: 10vh 0;
 }
 
-.item-contents>.title {
+.post-contents>.title {
   font-size: 5vh;
   line-height: 1.4;
   font-weight: bold;
 }
 
-.item-contents>.subtitle {
+.post-contents>.subtitle {
   font-size: 3vh;
   margin: 1vh 0;
   text-decoration: none;
@@ -237,56 +144,41 @@ a {
   font-weight: bold;
 }
 
-.item-lists {
+.post-lists {
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.item-lists>.list {
+.post-lists>.list {
   width: 37vh;
   padding: 1vw;
-  background-color: #FFF;
+  border: 1px solid;
+  background-color: rgb(228, 228, 228);
 }
 
 
-.item-img-content {
+.post-img-content {
   position: relative;
 }
 
-.item-img {
+.post-img {
   width: 33vh;
   height: 33vh;
 }
 
-.sold-out {
-  position: absolute;
-  top: 40%;
-  width: 100%;
-  text-align: center;
-  background-color: crimson;
-  transform: skewY(-10deg);
-}
-
-.sold-out>span {
-  color: #FFF;
-  font-size: 45px;
-  font: bold;
-}
-
-
-.item-info {
+.post-info {
   background-color: #FFF;
   color: black;
   padding: 1vw;
 }
 
-.item-name {
+.post-name {
   font-size: 2.5vh;
 }
 
-.item-price {
+.post-place {
   font-size: 1.5vh;
   display: flex;
   justify-content: space-between;
@@ -307,5 +199,4 @@ a {
 .star-count {
   font-size: 2vh;
 }
-
-/* //商品一覧 */
+/* //投稿一覧 */
