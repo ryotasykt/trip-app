@@ -1,8 +1,11 @@
 /* border-bottom: 1px solid #eee; */
 
-
 .posts-contents {
   background-color: #f5f5f5;
+  background-image: url(/images/phone.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
   font-size: 14px;
   display: flex;
@@ -17,16 +20,18 @@
 }
 
 .posts-main {
-  background-color: #FFF;
+  background-color: rgba(250, 250, 250, 0.3);
   width: 70vw;
   min-width: 450px;
   padding: 10vh 15vw;
 }
 
 .posts-title {
-  font-size: 22px;
+  font-size: 25px;
   font-weight: bold;
   text-align: center;
+  color: #4b4b4b;
+  text-shadow: -3px 0 0 white;
 }
 
 /* 共通 */
@@ -52,24 +57,6 @@
   background-color: #f5f5f5;
   padding-left: 20px;
 }
-
-.question {
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  background: #0099e8;
-  color: #FFF;
-  font-size: 13px;
-  text-align: center;
-  line-height: 20px;
-  text-decoration: none;
-  margin-left: 5px;
-}
-
-.question-text {
-  display: flex;
-}
-
 /* /共通 */
 
 /* 出品画像 */
@@ -88,7 +75,6 @@
 .click-upload>p {
   margin-bottom: 15px;
 }
-
 /* /出品画像 */
 
 /* 商品名と商品説明 */
@@ -108,7 +94,6 @@
 .posts-explain {
   margin-top: 2vh;
 }
-
 /* /商品名と商品説明 */
 
 /* 商品の詳細など */
@@ -142,41 +127,23 @@
   height: 50px;
   font-size: 14px;
   margin-bottom: 4vh;
+  border-radius: 15px;
 }
 
 .back-btn {
   background: #aaa;
   border: 1px solid #aaa;
+  border-radius: 15px;
   color: #fff;
   padding: 15px 35%;
   text-decoration: none;
 }
-
 /* /下部ボタン */
 
-.items-sell-footer {
-  background-color: #f5f5f5;
+.posts-footer {
   width: 60vw;
   padding: 3ch 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-
-.items-sell-footer>.menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 3vh 0;
-}
-
-.menu>li>a {
-  color: black;
-  font-size: 12px;
-  margin: 2vw;
-}
-
-.inc {
-  font-size: 13px;
 }

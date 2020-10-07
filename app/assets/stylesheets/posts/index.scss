@@ -112,8 +112,12 @@ a {
   width: 5vh;
   border: 0;
   cursor: pointer;
-  background-color: red;
+  background-color: rgb(247, 52, 52);
   padding: 8px;
+}
+
+.search-button:hover {
+  background-color: rgb(255, 0, 0);
 }
 
 .search-icon {
@@ -134,15 +138,25 @@ a {
   font-size: 5vh;
   line-height: 1.4;
   font-weight: bold;
+  margin-bottom: 30px ;
 }
 
 .post-contents>.subtitle {
   font-size: 3vh;
-  margin: 1vh 0;
+  margin: 5vh 0 1vh 0;
+  padding: 0 5px;
   text-decoration: none;
   color: #4b4b4b;
   text-shadow: -3px 0 0 white;
   font-weight: bold;
+  background-color: wheat;
+  box-shadow: 0 7px rgb(243, 209, 145);
+}
+
+.post-contents>.subtitle:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
 }
 
 .post-lists {

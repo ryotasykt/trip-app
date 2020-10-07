@@ -2,7 +2,7 @@
   width: 100%;
   min-width: 800px;
   height: 100%;
-  background-image: url(../../tokyo.jpg);
+  background-image: url(/images/tokyo.jpg);
   background-size: cover;
   background-color: skyblue;
   display: flex;
