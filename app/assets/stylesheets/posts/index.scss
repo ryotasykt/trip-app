@@ -112,7 +112,7 @@ span {
   width: 5vh;
   border: 0;
   cursor: pointer;
-  background-color: #3ccace;
+  background-color: red;
   padding: 8px;
 }
 
@@ -140,7 +140,8 @@ span {
   font-size: 3vh;
   margin: 1vh 0;
   text-decoration: none;
-  color: #3ccace;
+  color: #4b4b4b;
+  text-shadow: -3px 0 0 white;
   font-weight: bold;
 }
 
