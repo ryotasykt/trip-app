@@ -7,7 +7,7 @@ FactoryBot.define do
     satisfaction_level_id { Faker::Number.between(from: 2, to: 6) }
     prefecture_id { Faker::Number.between(from: 2, to: 48) }
     association :user
-  
+
     after(:build) do |sample|
       sample.image.attach(io: File.open('app/assets/images/camera.png'), filename: 'camera.png')
     end
