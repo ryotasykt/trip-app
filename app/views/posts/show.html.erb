@@ -54,7 +54,7 @@
     <% if user_signed_in? && current_user.id == @post.user_id %>
       <%= link_to 'EDIT', edit_post_path(@post.id), method: :get, class: "post-red-btn" %>
       <p class='or-text'>or</p>
-      <%= link_to 'DELETE', "#", method: :delete, class:'post-destroy' %>
+      <%= link_to 'DELETE', post_path, method: :delete, class:'post-destroy' %>
     <% end %>
   </div>
   <%# /商品の概要 %>
