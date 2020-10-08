@@ -52,7 +52,7 @@
     </table>
     
     <% if user_signed_in? && current_user.id == @post.user_id %>
-      <%= link_to 'EDIT', "#", method: :get, class: "post-red-btn" %>
+      <%= link_to 'EDIT', edit_post_path(@post.id), method: :get, class: "post-red-btn" %>
       <p class='or-text'>or</p>
       <%= link_to 'DELETE', "#", method: :delete, class:'post-destroy' %>
     <% end %>
