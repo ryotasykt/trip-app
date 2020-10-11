@@ -60,12 +60,27 @@
   <%# /商品の概要 %>
 
   <div class="comment-box">
-    <form>
-      <textarea class="comment-text"></textarea>
-      <button type="submit" class="comment-btn">
-        <span>COMMENT<span>
-      </button>
-    </form>
+    <% if current_user %>
+      <%= form_with(model: [@post, @comment], local: true) do |form| %>
+        <%= form.text_area :text, class:"comment-text", placeholder: "コメントする" %>
+        <%= form.submit "SEND", class:"comment-btn" %>
+      <% end %>
+    <% else %>
+      <strong><p class="attention">※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p></strong>
+    <% end %>
+    <div class="comment-sub-box">
+      <h4>＜COMMENT＞</h4>
+      <div class="comments">
+        <% if @comment %>
+          <% @comments.each do |comment| %>
+            <div class="comment-list">
+              <strong><%= link_to comment.user.nickname, "#" %>：</strong>
+              <%= comment.text %>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
   </div>
 </div>
 

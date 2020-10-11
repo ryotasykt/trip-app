@@ -63,7 +63,7 @@ https://trip-app-1.herokuapp.com/
 
 | Column                | Type       | Options                        |
 | --------------------- | ---------- | ------------------------------ |
-| user                  | references | null: false, foreign_key: true |
+| user_id               | references | null: false, foreign_key: true |
 | name                  | string     | null: false                    |
 | description           | text       | null: false                    |
 | member_id             | integer    | null: false                    |
@@ -83,11 +83,11 @@ https://trip-app-1.herokuapp.com/
 
 ## comments テーブル
 
-| Column | Type       | Options                        |
-| -------| ---------- | ------------------------------ |
-| user   | references | null: false, foreign_key: true |
-| post   | references | null: false, foreign_key: true |
-| text   | text       |                                |
+| Column  | Type       | Options                        |
+| ------- | ---------- | ------------------------------ |
+| user_id | integer    |                                |
+| post_id | integer    |                                |
+| text    | text       |                                |
 
 ### Association
 
