@@ -19,6 +19,11 @@ class PostsController < ApplicationController
     end
   end
 
+  def show
+    @comment = Comment.new
+    @comments = @post.comments.includes(:user)
+  end
+
   def update
     if @post.user_id == current_user.id
       if @post.update(post_params)
