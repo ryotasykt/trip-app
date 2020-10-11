@@ -24,7 +24,7 @@
     <% end %>
     <h2 class='title'>Post list</h2>
     <ul class='post-lists'>
-      <% @post.each do |post| %>
+      <% @posts.each do |post| %>
       <li class='list'>
         <%= link_to post_path(post.id), method: :get do %>
         <div class='post-img-content'>
@@ -42,26 +42,6 @@
         <% end %>
       </li>
       <% end %>
-
-      <%# 投稿がない場合のダミー %>
-      <% unless @post.present? %>
-      <li class='list'>
-        <%= link_to '#' do %>
-        <%= image_tag "https://s3-ap-northeast-1.amazonaws.com/mercarimaster/uploads/captured_image/content/10/a004.png", class: "post-img" %>
-        <div class='post-info'>
-          <h3 class='post-name'>
-            Let's post！
-          </h3>
-          <div class='star-btn'>
-            <%= image_tag "star.png", class:"star-icon" %>
-            <p class='star-count'>0</p>
-          </div>
-        </div>
-        <% end %>
-      </li>
-      <% end %>
-      <%# /投稿がない場合のダミー %>
-
     </ul>
     <%= link_to 'New Post', new_post_path, class: "subtitle" %>
   </div>

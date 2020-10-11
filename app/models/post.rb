@@ -14,4 +14,12 @@ class Post < ApplicationRecord
     validates :description
     validates :member_id, :transportation_id, :satisfaction_level_id, :prefecture_id, numericality: { other_than: 1, message: 'Select' }
   end
+
+  def self.search(search)
+    if search != ""
+      Post.where('name LIKE(?)', "%#{search}%")
+    else
+      Post.all
+    end
+  end
 end
