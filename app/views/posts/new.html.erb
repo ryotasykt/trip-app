@@ -4,7 +4,7 @@
   </header>
   
   <div class="posts-main">
-    <h2 class="posts-title">Post information</h2>
+    <h2 class="posts-title">Post Information</h2>
     <%= form_with model: @post, local: true do |f| %>
 
     <%= render 'shared/error_messages', model: f.object %>
@@ -71,8 +71,8 @@
 
     <%# 下部ボタン %>
     <div class="post-btn-contents">
-      <%= f.submit "post" ,class:"post-btn" %>
-      <%=link_to 'back', root_path, class:"back-btn" %>
+      <%= f.submit "Post" ,class:"post-btn" %>
+      <%=link_to 'Back', root_path, class:"back-btn" %>
     </div>
     <%# /下部ボタン %>
     <% end %>
