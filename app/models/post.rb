@@ -16,7 +16,7 @@ class Post < ApplicationRecord
   end
 
   def self.search(search)
-    if search != ""
+    if search != ''
       Post.where('name LIKE(?)', "%#{search}%")
     else
       Post.all
