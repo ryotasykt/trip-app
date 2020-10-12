@@ -1,12 +1,17 @@
 <%= render "shared/header" %>
-
+  
+  <%# My投稿一覧 %>
   <div class='my-post-contents'>
+
+  　<%# 検索フォーム部分 %>
     <%= form_with(url: search_posts_path, method: :get, class: "my-search-form", local: true) do |form| %>
       <%= form.text_field :keyword, placeholder: "投稿を検索する", class: "input-box" %>
       <button class="search-button">
         <%= image_tag "search.png", class:"search-icon" %>
       </button>
     <% end %>
+    <%# /検索フォーム部分 %>
+
     <h2 class='title'>My Post List</h2>
     <ul class='post-lists'>
       <% @posts.each do |post| %>
@@ -30,5 +35,6 @@
     </ul>
     <%= link_to 'New Post', new_post_path, class: "subtitle" %>
   </div>
+  <%# /My投稿一覧 %>
 
 <%= render "shared/footer" %> 

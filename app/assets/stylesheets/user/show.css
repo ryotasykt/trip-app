@@ -1,3 +1,4 @@
+/* My投稿一覧 */
 .my-post-contents {
   background-image: url(/images/desk.jpg);
   background-size: cover;
@@ -50,3 +51,5 @@
   padding-left: 10px;
 }
 /* //検索フォーム部分 */
+
+/* //My投稿一覧 */

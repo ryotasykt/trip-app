@@ -14,14 +14,18 @@
   </div>
   <%# /画面上部のタイトル部分 %>
 
-  <%# 投稿一覧 %>
+  <%# 検索投稿一覧 %>
   <div class='post-contents'>
+
+  　<%# 検索フォーム部分 %>
     <%= form_with(url: search_posts_path, method: :get, class: "search-form", local: true) do |form| %>
       <%= form.text_field :keyword, placeholder: "投稿を検索する", class: "input-box" %>
       <button class="search-button">
         <%= image_tag "search.png", class:"search-icon" %>
       </button>
     <% end %>
+    <%# /検索フォーム部分 %>
+
     <h2 class='title'>Post list</h2>
     <ul class='post-lists'>
       <% @posts.each do |post| %>
@@ -45,8 +49,9 @@
     </ul>
     <%= link_to 'New Post', new_post_path, class: "subtitle" %>
   </div>
-  <%# /投稿一覧 %>
+  <%# /検索投稿一覧 %>
 
+  <%# フェードアウト画像 %>
   <div class="container">
     <div class="inner-block">
       <div class="fade-img-box">
@@ -57,6 +62,7 @@
       </div>
     </div>
   </div>
+  <%# /フェードアウト画像 %>
 </div>
 
 <%= render "shared/footer" %> 
