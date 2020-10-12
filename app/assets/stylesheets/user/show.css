@@ -17,6 +17,23 @@
   margin-bottom: 30px ;
 }
 
+.my-post-contents>.post-list {
+  width: 95vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.my-post-contents>.post-list>.list {
+  width: 37vh;
+  padding: 1vw;
+  border: 1px solid;
+  background-color: rgb(245, 244, 244);
+  margin-bottom: 20px;
+}
+
 .my-post-contents>.subtitle {
   font-size: 3vh;
   margin: 5vh 0 1vh 0;

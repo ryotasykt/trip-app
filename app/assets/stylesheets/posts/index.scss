@@ -63,34 +63,6 @@ a {
 }
 /* //画面上部タイトル部分 */
 
-/* フェードアウト画像部分 */
-.container {
-  overflow: hidden;
-}
- 
-.inner-block {
-  width: 100vw;
-  margin: 0 auto;
-  position: relative;
-}
- 
-.fade-img-box {
-  width: 100%;
-  height: 700px;
-  margin-left: auto;
-  position: relative;
-}
- 
-.fade-img-box img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-/* //フェードアウト画像部分 */
-
 /* 検索フォーム部分 */
 .search-form {
   width: 65vw;
@@ -137,7 +109,7 @@ a {
   font-size: 5vh;
   line-height: 1.4;
   font-weight: bold;
-  margin-bottom: 30px ;
+  margin-bottom: 40px;
 }
 
 .post-contents>.subtitle {
@@ -159,10 +131,13 @@ a {
 }
 
 .post-lists {
-  width: 100vw;
+  width: 95vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  border: 1px solid whitesmoke;
+  padding-top: 20px;
+  background-color: rgba(236, 253, 240, 0.4);
 }
 
 .post-lists>.list {
@@ -170,6 +145,7 @@ a {
   padding: 1vw;
   border: 1px solid;
   background-color: rgb(245, 244, 244);
+  margin-bottom: 20px;
 }
 
 
@@ -214,3 +190,31 @@ a {
   font-size: 2vh;
 }
 /* //投稿一覧 */
+
+/* フェードアウト画像部分 */
+.container {
+  overflow: hidden;
+}
+ 
+.inner-block {
+  width: 100vw;
+  margin: 0 auto;
+  position: relative;
+}
+ 
+.fade-img-box {
+  width: 100%;
+  height: 700px;
+  margin-left: auto;
+  position: relative;
+}
+ 
+.fade-img-box img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* //フェードアウト画像部分 */
